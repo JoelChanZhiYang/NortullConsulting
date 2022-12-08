@@ -8,10 +8,15 @@ const Hero = () => {
         muted
         loop
         typeof="video/mp4"
-        className="h-full w-full object-cover"
+        className="h-full w-full object-cover fixed inset-0"
       />
-
-      <div></div>
+      <div className="h-full w-full inset-0 fixed">
+        <div className="px-12">
+          <h1 className="h1 text-white py-12 text-center font-semibold">
+            Simple and Effective IT Solutions for your business
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .h1 {
+    /* 32px mobile, 90px desktop */
+    @apply font-normal text-3xl md:text-6xl lg:text-8xl;
+  }
+
+  .h2 {
+    @apply font-normal text-3xl md:text-5xl lg:text-7xl;
+  }
+
+  .h3 {
+    /* 24px mobile, 32px desktop */
+    @apply font-normal text-2xl md:text-3xl;
+  }
+
+  .h4 {
+    @apply font-normal text-xl md:text-2xl;
+  }
+
+  .h5 {
+    @apply font-normal text-lg md:text-xl;
+  }
+
+  .p {
+    @apply font-light text-base md:text-lg;
+  }
+
+  .code {
+    @apply font-light font-mono;
+  }
+}

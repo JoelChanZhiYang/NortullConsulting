@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
-import Hero from "../components/Hero";
+import { Hero } from "../components/Hero";
+import { NavBar } from "../components/NavBar";
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
       />
 
       <main>
-        <Hero></Hero>
-        <h1 className="">hi</h1>
+        <Hero />
       </main>
 
       <footer></footer>

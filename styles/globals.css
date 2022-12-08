@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: black;
+  @apply text-white;
+}
+
 @layer components {
   .h1 {
     /* 32px mobile, 90px desktop */

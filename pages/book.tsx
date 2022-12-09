@@ -17,6 +17,7 @@ export default function Book() {
             data-netlify="true"
             action="/success"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <h1 className="h2 mb-6">Contact us</h1>
             <div className="mb-6 flex flex-col md:flex-row gap-y-6 gap-x-4">
               <div className="flex-1">

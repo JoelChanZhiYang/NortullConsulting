@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
 import { CenterColumn } from "../components/layout/CenterColumn";
+import { NavBar } from "../components/NavBar";
 
 export default function Book() {
   return (
@@ -9,9 +10,10 @@ export default function Book() {
         description="Book an appointment with Nortull Consulting"
       />
       <div>
+        <NavBar />
         <CenterColumn>
           <form
-            className="px-4 py-12"
+            className="px-4 py-32"
             name="contact"
             method="POST"
             data-netlify="true"

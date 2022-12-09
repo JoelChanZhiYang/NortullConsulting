@@ -15,7 +15,7 @@ export default function Book() {
             name="contact"
             method="POST"
             data-netlify="true"
-            action="/"
+            action="/success"
           >
             <h1 className="h2 mb-6">Contact us</h1>
             <div className="mb-6 flex flex-col md:flex-row gap-y-6 gap-x-4">

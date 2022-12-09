@@ -14,14 +14,15 @@ export const Hero = () => {
 
         <video
           preload="auto"
-          src="/images/grid.mp4"
           autoPlay
           muted
           loop
           playsInline
           typeof="video/mp4"
           className="h-full w-full object-cover absolute inset-0"
-        />
+        >
+          <source src="/images/grid.mp4" type="video/mp4" />
+        </video>
         <div className="h-full w-full inset-0 text-white absolute">
           <CenterColumn>
             <div className="px-12">

@@ -18,6 +18,7 @@ export const Hero = () => {
           autoPlay
           muted
           loop
+          playsInline
           typeof="video/mp4"
           className="h-full w-full object-cover absolute inset-0"
         />

@@ -13,14 +13,13 @@ export const Hero = () => {
         <NavBar />
 
         <video
-          preload="auto"
-          autoPlay
-          muted
           loop
           playsInline
           webkit-playsinline
           typeof="video/mp4"
           className="h-full w-full object-cover absolute inset-0"
+          autoPlay
+          muted
         >
           <source src="/images/grid.mp4" type="video/mp4" />
         </video>

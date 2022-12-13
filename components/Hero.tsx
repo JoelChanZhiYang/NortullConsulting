@@ -15,12 +15,12 @@ export const Hero = () => {
         <video
           loop
           playsInline
-          webkit-playsinline
           typeof="video/mp4"
           className="h-full w-full object-cover absolute inset-0"
           autoPlay
           muted
         >
+          <source src="/images/grid.webm" type="video/webm" />
           <source src="/images/grid.mp4" type="video/mp4" />
         </video>
         <div className="h-full w-full inset-0 text-white absolute">

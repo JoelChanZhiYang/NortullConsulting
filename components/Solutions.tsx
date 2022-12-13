@@ -31,8 +31,8 @@ export const Solutions = () => {
   return (
     <CenterColumn>
       <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-        {copy.map((card) => (
-          <Card {...card}></Card>
+        {copy.map((card, idx) => (
+          <Card key={idx} {...card}></Card>
         ))}
       </div>
     </CenterColumn>

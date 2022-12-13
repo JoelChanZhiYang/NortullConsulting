@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  @apply text-white;
+  @apply bg-white text-black
 }
 
 @layer components {

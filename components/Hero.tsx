@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <div
       id="hero"
-      className="h-screen max-h-[1080px] min-h-[750px] flex flex-col bg-gradient-to-b "
+      className="h-screen max-h-[1080px]  flex flex-col bg-gradient-to-b "
     >
       <div className="flex-1 relative">
         <NavBar />
@@ -17,7 +17,8 @@ export const Hero = () => {
           <CenterColumn>
             <div className="space-y-4 md:space-y-8">
               <h1 className="h2 text-center font-semibold text-gray-900">
-                Building <i>tomorrow's</i> solutions to <i>today's</i> problems
+                Building <i>tomorrow&apos;s </i> solutions to{" "}
+                <i>today&apos;s</i> problems
               </h1>
               <h2 className="h4 text-center text-gray-600">
                 Future-proof your business with a custom tech solution

@@ -6,7 +6,7 @@ export default function Book() {
   return (
     <>
       <NextSeo
-        title="Book an appointment | Nortull Consulting"
+        title="Book an appointment"
         description="Book an appointment with Nortull Consulting"
       />
       <div>

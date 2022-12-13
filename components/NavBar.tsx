@@ -7,10 +7,16 @@ export const NavBar = () => {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <Link href="/" className="flex items-center">
           <NortullLogo />
-          <span className="ml-4 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="ml-4 self-center text-xl font-semibold whitespace-nowrap">
             Nortull <br></br>Consulting
           </span>
         </Link>
+        <div>
+          <ul className="">
+            <li>hi</li>
+            <li>hi</li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

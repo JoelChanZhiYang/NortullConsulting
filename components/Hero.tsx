@@ -1,44 +1,42 @@
 import { useRouter } from "next/router";
 import { CenterColumn } from "./layout/CenterColumn";
 import { NavBar } from "./NavBar";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export const Hero = () => {
   const router = useRouter();
   return (
     <div
       id="hero"
-      className="h-screen max-h-[1080px] min-h-[750px] flex flex-col"
+      className="h-screen max-h-[1080px]  flex flex-col bg-gradient-to-b "
     >
       <div className="flex-1 relative">
         <NavBar />
 
-        <video
-          loop
-          playsInline
-          typeof="video/mp4"
-          className="h-full w-full object-cover absolute inset-0"
-          autoPlay
-          muted
-        >
-          <source src="/images/grid.webm" type="video/webm" />
-          <source src="/images/grid.mp4" type="video/mp4" />
-        </video>
-        <div className="h-full w-full inset-0 text-white absolute">
+        <div className="h-full w-full inset-0 absolute flex items-center">
           <CenterColumn>
-            <div className="px-12">
-              <h1 className="h2 pt-44 pb-12 text-center font-semibold">
-                Simple and Effective IT Solutions for your business
+            <div className="space-y-4 md:space-y-8">
+              <h1 className="h2 text-center font-semibold text-gray-900">
+                Building <i>tomorrow&apos;s </i> solutions to{" "}
+                <i>today&apos;s</i> problems
               </h1>
-            </div>
-            <div className="flex justify-center">
-              <button
-                onClick={() => {
-                  router.push("/book");
-                }}
-                className="text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/50 dark:shadow-md dark:shadow-orange-800/80 font-medium rounded-lg px-5 py-2.5 text-center"
-              >
-                Book a consultation
-              </button>
+              <h2 className="h4 text-center text-gray-600">
+                Future-proof your business with a custom tech solution
+              </h2>
+              <div className="flex justify-center">
+                <div className="relative">
+                  <button
+                    onClick={() => {
+                      router.push("/book");
+                    }}
+                    className="peer relative z-10 flex items-center space-x-2 bg-sky-400 font-medium rounded-lg px-5 py-2.5 text-center"
+                  >
+                    <span>Find out more</span>
+                    <ChevronRightIcon className="h-4 w-4" />
+                  </button>
+                  <div className="absolute -inset-3 rounded-lg peer-hover:bg-blue-200 blur-lg "></div>
+                </div>
+              </div>
             </div>
           </CenterColumn>
         </div>

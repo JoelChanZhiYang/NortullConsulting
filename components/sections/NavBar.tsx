@@ -1,7 +1,7 @@
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { NortullLogo } from "./NortullLogo";
+import { NortullLogo } from "../vectors/NortullLogo";
 
 export const NavBar = () => {
   const router = useRouter();

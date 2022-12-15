@@ -1,4 +1,4 @@
-import { CenterColumn } from "./layout/CenterColumn";
+import { CenterColumn } from "../layout/CenterColumn";
 type CardProps = { title: string; description: string };
 
 const copy: CardProps[] = [

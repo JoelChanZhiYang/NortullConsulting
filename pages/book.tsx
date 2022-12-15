@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import { CenterColumn } from "../components/layout/CenterColumn";
-import { NavBar } from "../components/NavBar";
+import { NavBar } from "../components/sections/NavBar";
 
 export default function Book() {
   return (

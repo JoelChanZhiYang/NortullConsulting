@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
-import { Hero } from "../components/Hero";
-import { Solutions } from "../components/Solutions";
+import { Hero } from "../components/sections/Hero";
+import { Solutions } from "../components/sections/Solutions";
 
 export default function Home() {
   return (
@@ -9,7 +9,6 @@ export default function Home() {
         title="Home"
         description="Simple and Effective IT Solutions for your business"
       />
-
       <main>
         <Hero />
         <Solutions />

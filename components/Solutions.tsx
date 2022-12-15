@@ -20,7 +20,7 @@ const copy: CardProps[] = [
 
 const Card = ({ title, description }: CardProps) => {
   return (
-    <div className="flex-1 p-4 md:p-6 rounded-lg bg-gray-50 shadow-lg">
+    <div className="flex-1 p-4 md:p-6 rounded-lg text-black">
       <h3 className="h4 md:h-20 font-semibold">{title}</h3>
       <p className="p">{description}</p>
     </div>
@@ -29,12 +29,14 @@ const Card = ({ title, description }: CardProps) => {
 
 export const Solutions = () => {
   return (
-    <CenterColumn>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-        {copy.map((card, idx) => (
-          <Card key={idx} {...card}></Card>
-        ))}
-      </div>
-    </CenterColumn>
+    <div className="bg-blue-300">
+      <CenterColumn>
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8 py-12 ]">
+          {copy.map((card, idx) => (
+            <Card key={idx} {...card}></Card>
+          ))}
+        </div>
+      </CenterColumn>
+    </div>
   );
 };
